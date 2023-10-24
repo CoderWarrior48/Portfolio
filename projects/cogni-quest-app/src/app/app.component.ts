@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CogniQuestApp';
+  data = {
+    links: [
+    { name: 'About', path: '/about' },
+    { name: 'Profile', path: '/profile' },
+    { name: 'Explore', path: '/explore' },
+    ],
+  title: "DH Portfolio" }
 }

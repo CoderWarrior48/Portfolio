@@ -1,9 +1,3 @@
-<app-navbar (data)="{
-  links: [
-  { name: 'About', path: '/about' },
-  { name: 'Profile', path: '/profile' },
-  { name: 'Explore', path: '/explore' },
-  ],
-title: "DH Portfolio" }">
+<app-navbar (data)="data">
   <router-outlet></router-outlet>
 </app-navbar>
