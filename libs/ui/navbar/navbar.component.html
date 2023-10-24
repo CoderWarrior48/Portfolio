@@ -11,7 +11,7 @@
           <mat-icon>home</mat-icon>
         </a>
   
-        <ng-container *ngFor="let item of links">
+        <ng-container *ngFor="let item of data.links">
           <mat-list-item routerLinkActive="selected" [routerLink]="item.path">
             {{ item.name }}
           </mat-list-item>
@@ -32,7 +32,7 @@
         class="branding box spacer hide-lt-md"
       >
         <!-- <mat-icon>home</mat-icon> -->
-        {{this.title}}
+        {{data.title}}
       </button>
       
       <button
@@ -42,11 +42,11 @@
         [disableRipple]="true"
       >
         <!-- <mat-icon>home</mat-icon> -->
-        {{this.title}}
+        {{data.title}}
       </button>
       <button
         mat-button
-        *ngFor="let item of links"
+        *ngFor="let item of data.links"
         routerLinkActive="selected"
         [routerLink]="item.path"
         class="hide-lt-md"

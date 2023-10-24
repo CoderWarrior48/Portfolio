@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './components/material/material.module';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { MaterialModule } from './material.module';
+import { NavbarComponent } from '../../../../libs/ui/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 
 
