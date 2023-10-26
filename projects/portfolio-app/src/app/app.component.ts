@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Portfolio';
+  navbar = {
+    links: [
+    { name: 'About', path: '/about' },
+    { name: 'New', path: '/profile' },
+    { name: 'Explore', path: '/explore' },
+    ],
+  title: "DH Portfolio" }
 }

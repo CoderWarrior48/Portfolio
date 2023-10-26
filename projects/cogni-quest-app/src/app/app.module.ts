@@ -9,12 +9,12 @@ import { MaterialModule } from './material.module';
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
-    NavbarComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
