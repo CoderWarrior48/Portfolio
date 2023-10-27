@@ -5,14 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
-import { NavbarComponent } from '../../../../libs/ui/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
+import { NavbarComponent } from 'libs/ui/navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     HomeComponent,
   ],
   imports: [
@@ -20,6 +19,7 @@ import { HomeComponent } from './pages/home/home.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    NavbarComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

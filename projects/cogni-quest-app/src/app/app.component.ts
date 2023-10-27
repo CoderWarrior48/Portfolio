@@ -13,5 +13,6 @@ export class AppComponent {
       { name: 'Profile', path: '/profile' },
       { name: 'Explore', path: '/explore' },
     ],
-    title: "CogniQuest" }
+    title: "CogniQuest"
+   }
 }
