@@ -1,9 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { MaterialModule } from './navbar-material.module';
 import { RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { MatToolbarModule, MatToolbar } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
