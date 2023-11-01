@@ -24,13 +24,6 @@ import {MatChipsModule} from '@angular/material/chips';
 
 
 
-
-
-
-
-
-
-
 const modules = [
   BrowserAnimationsModule,
   MatToolbarModule,
@@ -60,6 +53,7 @@ const modules = [
   imports: [CommonModule, modules],
   exports: [modules],
 })
+
 export class MaterialModule {
   constructor() {
   }

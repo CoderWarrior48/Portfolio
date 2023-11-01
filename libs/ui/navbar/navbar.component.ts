@@ -1,6 +1,13 @@
 import { Component, Input } from '@angular/core';
 import { MaterialModule } from './navbar-material.module';
 import { RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
+
+import { MatToolbarModule, MatToolbar } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
 
 
 
@@ -9,7 +16,15 @@ import { RouterModule } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
   standalone: true,
-  imports: [MaterialModule, RouterModule]
+  imports: [
+    RouterModule, 
+    MatIconModule, 
+    MatToolbarModule, 
+    MatButtonModule, 
+    MatSidenavModule, 
+    MatListModule, 
+    ],
+
 })
 export class NavbarComponent {
 
