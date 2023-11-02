@@ -8,7 +8,6 @@ import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from 'libs/ui/navbar/navbar.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
