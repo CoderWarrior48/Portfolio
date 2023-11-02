@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { pages } from './pages.data';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   navbar = {
-    links: [
-      { name: 'About', path: '/about' },
-      { name: 'New', path: '/profile' },
-      { name: 'Explore', path: '/explore' },
-    ],
+    links: pages,
     title: "DH Portfolio" 
   }
 }
