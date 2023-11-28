@@ -10,6 +10,8 @@ import { NavbarComponent } from 'libs/ui/navbar/navbar.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ExploreComponent } from './pages/explore/explore.component';
 import { ProjectComponent } from './pages/project/project.component';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { ProjectComponent } from './pages/project/project.component';
     BrowserAnimationsModule,
     MaterialModule,
     NavbarComponent,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
