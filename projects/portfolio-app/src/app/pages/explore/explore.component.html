@@ -1,13 +1,15 @@
 <div class="projects">
-    <mat-card *ngFor="let project of projects" [routerLink]="['/product-details', project.id]">>
-        <mat-card-header>
-            <mat-card-title>{{project.name}}</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-            <img [src]="project.image" style="width:100%">
-            <mat-chip *ngFor="let tag of project.tags">
-                {{tag}}
-            </mat-chip>
-        </mat-card-content>
-    </mat-card>
+    <ng-container *ngFor="let project of projects">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title><h1 routerLink="project">{{project.name}}</h1></mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <img [src]="project.image" style="width:100%">
+                <mat-chip *ngFor="let tag of project.tags">
+                    {{tag}}
+                </mat-chip>
+            </mat-card-content>
+        </mat-card>
+    </ng-container>
 </div>
