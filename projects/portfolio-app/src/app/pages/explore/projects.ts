@@ -8,7 +8,7 @@ export const projects = [
         'Nodejs',
       ],
       image: 'assets/images/DelOroApp-Screenshot.png',
-      path: 'apps/deloroapp' 
+      id: 'deloroapp' 
     },
     {
       name: 'CogniQuest',
@@ -19,7 +19,7 @@ export const projects = [
         'Nodejs',
       ],
       image: 'assets/images/none',
-      path: 'apps/cogniquest' 
+      id: 'cogniquest' 
     },
     {
       name: 'Decoder/Encoder',

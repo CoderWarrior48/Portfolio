@@ -1,5 +1,5 @@
 <div class="projects">
-    <mat-card *ngFor="let project of projects">
+    <mat-card *ngFor="let project of projects" [routerLink]="['/product-details', project.id]">>
         <mat-card-header>
             <mat-card-title>{{project.name}}</mat-card-title>
         </mat-card-header>
