@@ -1,4 +1,4 @@
-export const projects = [
+const projects = [
     {
       name: 'Del Oro App',
       tags: [

@@ -1,4 +1,4 @@
-const newsFeed = require('./files/newsfeed');
+const projects = require('./files/projects.ts');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -9,23 +9,12 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// app.post('/book', (req, res) => {
-//   const book = req.body;
-
-//   // Output the book to the console for debugging
-//   console.log(pages);
-//   books.push(pages);
-
-//   res.send('Book is added to the database');
-// });
-
-
 data = [
   {
     path: '/projects',
     type: 'get',
     body: {
-      accounts,
+      projects,
     },
   },
 ]
