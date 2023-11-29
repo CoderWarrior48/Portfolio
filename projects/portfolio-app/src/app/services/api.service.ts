@@ -8,7 +8,11 @@ import { map } from "rxjs/operators";
   providedIn: 'root',
 })
 export class ApiService {
-  constructor(private http: HttpClient) {}
+  
+
+  constructor(private http: HttpClient) {
+    console.log(this.http.get(`http://localhost:3000$/projects`))
+  }
   getDataFromServer(route: string) {
     console.log(`GETing ${route}`)
     return this.http.get(`http://localhost:3000${route}`);
