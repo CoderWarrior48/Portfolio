@@ -1,4 +1,5 @@
 <div class="projects" *ngIf="projects$ | async as projects">
+    <h1>{{projects | json}}</h1>
     <ng-container *ngFor="let project of projects">
         <mat-card>
             <mat-card-header>
