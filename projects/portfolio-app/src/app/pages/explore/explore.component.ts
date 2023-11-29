@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { projects } from './projects';
+import { ApiService } from '../../services/api.service';
+import { Observable, take } from 'rxjs';
 
 
 @Component({
@@ -8,5 +9,14 @@ import { projects } from './projects';
   styleUrls: ['./explore.component.scss']
 })
 export class ExploreComponent {
-  projects = projects
+  projects: any
+
+  projects$: Observable<any> = new Observable<any>;
+
+  constructor(public apiService: ApiService) {}
+
+  ngOnInit() {
+    this.projects$ = this.apiService.getDataFromServer('/projects').pipe(take(1))
+  }
+
 }
