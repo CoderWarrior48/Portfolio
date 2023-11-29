@@ -59,3 +59,5 @@ const projects = [
       id: 'calculator' 
     }
   ]
+
+  module.exports.projects = projects;

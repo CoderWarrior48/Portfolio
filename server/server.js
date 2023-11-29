@@ -1,4 +1,4 @@
-const projects = require('./files/projects.ts');
+const projects = require('./files/projects');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -9,12 +9,13 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+
 data = [
   {
     path: '/projects',
     type: 'get',
     body: {
-      projects,
+      projects: projects
     },
   },
 ]

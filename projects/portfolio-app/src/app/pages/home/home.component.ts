@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../../services/api.service';
+import { Observable, take } from 'rxjs';
 
 
 @Component({
@@ -7,66 +9,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  projects = [
-    {
-      name: 'Del Oro App',
-      tags: [
-        'Angular',
-        'HTML',
-        'Typescript',
-        'Nodejs',
-      ],
-      image: 'assets/images/none',
-      path: 'apps/deloroapp' 
-    },
-    {
-      name: 'CogniQuest',
-      tags: [
-        'Angular',
-        'HTML',
-        'Typescript',
-        'Nodejs',
-      ],
-      image: 'assets/images/none',
-      path: 'apps/cogniquest' 
-    },
-    {
-      name: 'Decoder/Encoder',
-      tags: [
-        'Python',
-      ],
-      image: 'assets/images/none',
-      path: 'apps/decoder-encoder' 
-    },
-    {
-      name: 'Del Oro App',
-      tags: [
-        'Angular',
-        'HTML',
-        'Typescript',
-        'Nodejs',
-      ],
-      image: 'assets/images/none',
-      path: 'apps/deloroapp' 
-    },
-    {
-      name: 'CogniQuest',
-      tags: [
-        'Angular',
-        'HTML',
-        'Typescript',
-        'Nodejs',
-      ],
-      image: 'assets/images/none',
-      path: 'apps/cogniquest' 
-    },
-    {
-      name: 'Decoder/Encoder',
-      tags: [
-        'Python',
-      ],
-      image: 'assets/images/none',
-      path: 'apps/decoder-encoder' 
-    }
-  ]
+  projects: any
+
+  projects$: Observable<any> = new Observable<any>;
+
+  constructor(public apiService: ApiService) {}
+  
+  ngOnInit() {
+    this.projects$ = this.apiService.getDataFromServer('/projects')
+  }
 }
