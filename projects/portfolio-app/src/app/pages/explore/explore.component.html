@@ -1,4 +1,4 @@
-<div class="projects">
+<div class="projects" *ngIf="projects$ | async as projects">
     <ng-container *ngFor="let project of projects">
         <mat-card>
             <mat-card-header>
