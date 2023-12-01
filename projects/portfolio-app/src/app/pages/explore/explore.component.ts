@@ -9,14 +9,15 @@ import { Observable, take } from 'rxjs';
   styleUrls: ['./explore.component.scss']
 })
 export class ExploreComponent {
-  projects: any
 
   projects$: Observable<any> = new Observable<any>;
 
-  constructor(public apiService: ApiService) {}
+  constructor(public apiService: ApiService) {
+
+  }
+
 
   ngOnInit() {
     this.projects$ = this.apiService.getDataFromServer('/projects').pipe(take(1))
   }
-
 }

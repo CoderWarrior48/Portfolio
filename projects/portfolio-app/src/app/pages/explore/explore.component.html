@@ -1,18 +1,17 @@
-<div *ngIf="projects$ | async as projects">
-    <div class="projects">
-        <h1>{{projects | json}}</h1>
-        <ng-container *ngFor="let project of projects.projects">
-            <mat-card>
-                <mat-card-header>
-                    <mat-card-title><h1 [routerLink]="['/project', project.id]">{{project.name}}</h1></mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                    <img [src]="project.image" style="width:100%">
-                    <mat-chip *ngFor="let tag of project.tags">
-                        {{tag}}
-                    </mat-chip>
-                </mat-card-content>
-            </mat-card>
-        </ng-container>
+<div class="projects">
+    <div *ngIf="projects$ | async as projects">
+            <ng-container *ngFor="let project of projects.projects.projects">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title><h1 [routerLink]="['/project', project.id]">{{project.name}}</h1></mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <img [src]="project.image" style="width:100%">
+                        <mat-chip *ngFor="let tag of project.tags">
+                            {{tag}}
+                        </mat-chip>
+                    </mat-card-content>
+                </mat-card>
+            </ng-container>
     </div>
 </div>

@@ -48,33 +48,6 @@ function Request(field) {
 
         res.json(field.body.accounts);
       });
-    case 'search':
-      app.post(field.path, (req, res) => {
-        console.log('SEARCHing data...');
-        isAccount = field.body.accounts.some(function (user) {
-          console.log(user.username == req.body.username);
-          return user.username == req.body.username;
-        });
-
-        console.log(isAccount);
-
-        if (isAccount != false) {
-          isPassword = field.body.accounts.some(function (user) {
-            return user.password == req.body.password;
-          });
-
-          if (isPassword != false) {
-            console.log('Corrrect credentials');
-            return true;
-          } else {
-            console.error('Incorrect password');
-            return false;
-          }
-        } else {
-          console.error('Username not found');
-          return false;
-        }
-      });
   }
 }
 

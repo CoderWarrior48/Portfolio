@@ -26,7 +26,7 @@
 </mat-card>
 <div *ngIf="projects$ | async as projects">
 <div class="projects" >
-    <mat-card *ngFor="let project of projects">
+    <mat-card *ngFor="let project of projects.projects.projects">
         <mat-card-header>
             <mat-card-title>{{project.name}}</mat-card-title>
         </mat-card-header>

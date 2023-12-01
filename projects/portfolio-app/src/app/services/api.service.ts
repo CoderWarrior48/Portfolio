@@ -11,11 +11,10 @@ export class ApiService {
   
 
   constructor(private http: HttpClient) {
-    console.log(this.http.get(`http://localhost:3000$/projects`))
   }
   getDataFromServer(route: string) {
     console.log(`GETing ${route}`)
-    return this.http.get(`http://localhost:3000${route}`);
+    return this.http.get(`https://expert-train-7xpw5rjj6jqhrvxj-3000.app.github.dev${route}`);
   }
   postDataToServer(route: string, data:any) {
     console.log(`POSTing to ${route}`)
