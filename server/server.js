@@ -12,6 +12,13 @@ app.use(bodyParser.json());
 
 data = [
   {
+    path: '/',
+    type: 'get',
+    body: 'Welcome to the app backend!'
+    
+
+  },
+  {
     path: '/projects',
     type: 'get',
     body: {
