@@ -18,15 +18,15 @@ const projects = [
         'Typescript',
         'Nodejs',
       ],
-      image: 'assets/images/none',
+      image: 'assets/images/DelOroApp-Screenshot.png',
       id: 'cogniquest' 
     },
     {
-      name: 'Decoder/Encoder',
+      name: 'Translator',
       tags: [
         'Python',
       ],
-      image: 'assets/images/none',
+      image: 'assets/images/DelOroApp-Screenshot.png',
       id: 'decoderencoder'     },
     {
       name: 'Del Oro App',
@@ -47,7 +47,7 @@ const projects = [
         'Typescript',
         'Nodejs',
       ],
-      image: 'assets/images/none',
+      image: 'assets/images/DelOroApp-Screenshot.png',
       id: 'cogniquest' 
     },
     {
@@ -55,7 +55,7 @@ const projects = [
       tags: [
         'Python', 'Module'
       ],
-      image: 'assets/images/none',
+      image: 'assets/images/DelOroApp-Screenshot.png',
       id: 'calculator' 
     }
   ]

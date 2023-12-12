@@ -1,6 +1,7 @@
-<div class="projects">
+
     <div *ngIf="projects$ | async as projects">
-            <ng-container *ngFor="let project of projects.projects.projects">
+        <div class="projects">
+            <div *ngFor="let project of projects.projects.projects">
                 <mat-card>
                     <mat-card-header>
                         <mat-card-title><h1 [routerLink]="['/project', project.id]">{{project.name}}</h1></mat-card-title>
@@ -12,6 +13,6 @@
                         </mat-chip>
                     </mat-card-content>
                 </mat-card>
-            </ng-container>
+            </div>
+        </div>
     </div>
-</div>

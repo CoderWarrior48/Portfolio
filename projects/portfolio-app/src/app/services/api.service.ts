@@ -14,7 +14,7 @@ export class ApiService {
   }
   getDataFromServer(route: string) {
     console.log(`GETing ${route}`)
-    return this.http.get(`http://localhost:4200/api${route}`);
+    return this.http.get(`https://expert-train-7xpw5rjj6jqhrvxj-4200.app.github.dev/api${route}`);
   }
   postDataToServer(route: string, data:any) {
     console.log(`POSTing to ${route}`)
