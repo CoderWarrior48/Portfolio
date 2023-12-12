@@ -78,7 +78,7 @@ function Request(field) {
 
     case 'search':
       app.get(field.path, function(req, res, next) {
-        return res.json({ data: field.dataset.search(req.query) });
+        return res.json({ data: projects.search(req.query) });
       });
 
   }
