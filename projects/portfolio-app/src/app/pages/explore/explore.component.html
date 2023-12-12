@@ -1,5 +1,7 @@
 
-    <div *ngIf="projects$ | async as projects">
+  <mat-form-field><input mat-input></mat-form-field>
+  
+  <div *ngIf="projects$ | async as projects">
         <div class="projects">
             <div *ngFor="let project of projects.projects.projects">
                 <mat-card>
