@@ -2,6 +2,7 @@ const projects = require('./files/projects');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const { updateLanguageServiceSourceFile } = require('typescript');
 
 const app = express();
 const port = 3000;
@@ -35,6 +36,7 @@ data = [
 console.log('Initilizing paths');
 data.map(Request);
 
+
 function search(query) {
   return function(element) {
     for(var i in query) {
@@ -44,9 +46,6 @@ function search(query) {
     }
     return true;
   }
-}
-exports.search = function(query) {
-  return users.filter(search(query));
 }
 
 function Request(field) {
@@ -78,7 +77,7 @@ function Request(field) {
 
     case 'search':
       app.get(field.path, function(req, res, next) {
-        return res.json({ data: projects.search(req.query) });
+        return res.json({ data: projects.projects.filter(search(req.query)) });
       });
 
   }
