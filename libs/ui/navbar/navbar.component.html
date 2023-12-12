@@ -19,7 +19,7 @@
       </mat-nav-list>
     </mat-sidenav>
   
-    <mat-toolbar id="app-toolbar" color="primary">
+    <mat-toolbar id="app-toolbar" [color]="data.color">
       <div class="hide-gt-sm">
         <button mat-icon-button (click)="sidenav.toggle()">
           <mat-icon>menu</mat-icon>
