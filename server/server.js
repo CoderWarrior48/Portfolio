@@ -25,10 +25,29 @@ data = [
       projects: projects
     },
   },
+  {
+    path:'/search-projects',
+    type:'search',
+    dataset: projects
+  }
 ]
 
 console.log('Initilizing paths');
 data.map(Request);
+
+function search(query) {
+  return function(element) {
+    for(var i in query) {
+      if(query[i] != element[i]) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+exports.search = function(query) {
+  return users.filter(search(query));
+}
 
 function Request(field) {
   console.log(`\x1b[32m${field.path} is running as ${field.type}:`);
@@ -55,8 +74,16 @@ function Request(field) {
 
         res.json(field.body.accounts);
       });
+
+
+    case 'search':
+      app.get(field.path, function(req, res, next) {
+        return res.json({ data: field.dataset.search(req.query) });
+      });
+
   }
 }
+
 
 app.listen(port, () =>
   console.log(`DelOroApp server listening on port ${port}`)
