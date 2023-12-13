@@ -10,13 +10,14 @@ mat-card {
         padding-top: 20%;
         text-align: center;
         font-size: 20px;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0);
         border-radius: 5px;
-        transition: opacity 2s;
+        transition: ease 0.5s;
         opacity: 0;
     }
 
-    .image-overlay :hover {
+    .image-overlay:hover {
+        background-color: rgba(0,0,0,0.8) ;
         opacity: 1
     }
 
