@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { NavbarComponent } from 'libs/ui/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
+import { HomeComponent } from '../pages/home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     
   ],
   imports: [

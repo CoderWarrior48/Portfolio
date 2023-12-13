@@ -1,7 +1,10 @@
 export const pages = [
     {name:'Home', path:'/home'},
-    {name:'About', path:'/about'},
-    {name:'Explore', path:'/explore'},
-    {name:'Impact', path:'/impact'}
+    {name:'Causes', path:'/causes'},
+    {name:'Impacts', path:'/impact'},
+    {name:'Solutions', path:'/solutions'},
+    {name:'Glossary', path:'/about'},
+
+
 
 ]
