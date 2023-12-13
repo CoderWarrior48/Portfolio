@@ -7,10 +7,23 @@ import { Component } from '@angular/core';
 })
 export class GlossaryComponent {
 
+  constructor () {
+    function search(query: any) {
+      return function(item: any) {
+        for(var i in query) {
+          if(query[i] != item[i]) {
+            return false;
+          }
+        }
+        return true;
+      }
+    }
+  }
+  
 
-  search: any 
+  search: any = []
 
-  terms = [
+  terms: any = [
     {
       term: 'climate',
       definition: 'The average weather in an area.'
@@ -21,6 +34,7 @@ export class GlossaryComponent {
     }
 ]
 
-
-view: any = this.terms 
+//white screen of death & redirect... code below is the issue, remove to fix
+ view: any = this.terms.filter(this.search(this.search))
+// view: any = this.terms
 }

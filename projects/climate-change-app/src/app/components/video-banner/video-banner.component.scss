@@ -1,0 +1,28 @@
+
+  
+.video {
+    width: 100%;
+    height: auto;
+    display: block;
+    top:0;
+    position: relative;
+    
+
+}
+
+.text {
+    opacity: 1;
+    top: 35%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+
+    h1 {
+        font-size: 70px;
+    }
+    p {
+        font-size: 15px;
+    }
+}

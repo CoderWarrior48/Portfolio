@@ -10,6 +10,8 @@ import { NavbarComponent } from 'libs/ui/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { GlossaryComponent } from './pages/glossary/glossary.component';
+import { CausesComponent } from './pages/causes/causes.component';
+import { VideoBannerComponent } from './components/video-banner/video-banner.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { GlossaryComponent } from './pages/glossary/glossary.component';
     AppComponent,
     HomeComponent,
     GlossaryComponent,
+    CausesComponent,
+    VideoBannerComponent,
     
   ],
   imports: [
