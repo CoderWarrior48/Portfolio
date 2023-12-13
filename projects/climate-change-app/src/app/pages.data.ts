@@ -3,7 +3,7 @@ export const pages = [
     {name:'Causes', path:'/causes'},
     {name:'Impacts', path:'/impact'},
     {name:'Solutions', path:'/solutions'},
-    {name:'Glossary', path:'/about'},
+    {name:'Glossary', path:'/glossary'},
 
 
 
