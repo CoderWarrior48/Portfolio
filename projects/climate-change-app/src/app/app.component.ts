@@ -10,7 +10,7 @@ export class AppComponent {
 
   navbar = {
     links: pages,
-    title: "DH Portfolio",
+    title: "Climate Change",
     color: 'primary'
   }
 }
