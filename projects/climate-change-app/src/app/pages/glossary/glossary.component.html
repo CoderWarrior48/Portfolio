@@ -5,4 +5,13 @@
     </mat-form-field>
 
     <h1>{{search}}</h1>
+
+    <mat-card *ngFor="item of view">
+        <mat-card-header>
+            <mat-card-title>{{item.term}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            {{item.defintion}}
+        </mat-card-content>
+    </mat-card>
 </div>

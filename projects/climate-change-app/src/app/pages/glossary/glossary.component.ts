@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class GlossaryComponent {
 
-  view: any 
+
   search: any 
 
   terms = [
@@ -20,4 +20,7 @@ export class GlossaryComponent {
       definition: 'Conditions such as humitity, temperature...'
     }
 ]
+
+
+view: any = this.terms 
 }
