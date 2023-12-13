@@ -1,3 +1,36 @@
-#landing-video {
+
+
+.container {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+.video {
+    opacity: 1;
+    display: block;
     width: 100vw;
+    height: 100vh;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay {
+    opacity: 0.3;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100%;
+    width: 100vw;
+    
+}
+.text {
+    opacity: 1;
+    text-align: center;
+    position: absolute;
+    top: vh/2;
+    color: white;
 }
