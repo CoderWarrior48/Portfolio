@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { terms } from './terms.data'
 @Component({
   selector: 'app-glossary',
   templateUrl: './glossary.component.html',
@@ -23,18 +23,9 @@ export class GlossaryComponent {
 
   search: any = []
 
-  terms: any = [
-    {
-      term: 'climate',
-      definition: 'The average weather in an area.'
-    },
-    {
-      term: 'weather',
-      definition: 'Conditions such as humitity, temperature...'
-    }
-]
+  
 
 //white screen of death & redirect... code below is the issue, remove to fix
- view: any = this.terms.filter(this.search(this.search))
+ view: any = terms.filter(this.search(this.search))
 // view: any = this.terms
 }

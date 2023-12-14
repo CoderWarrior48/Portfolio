@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { pages } from './pages.data';
+import { terms } from './pages/glossary/terms.data'
 
 @Component({
   selector: 'app-root',
@@ -13,4 +14,14 @@ export class AppComponent {
     title: "Climate Change",
     color: 'primary'
   }
+  constructor () {
+    //Replace matching terms in elements with a class of filter-keywords to bold and linked to definition.
+    for (let i = 0; i < terms.length; i++) {
+      let entry = terms[i]
+      let elements = document.getElementsByClassName('filter-keywords')
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].innerHTML.replace(entry.term,`<b routerLink="${entry.link}">${entry.term}</b>`)
+    }
+  }
+}
 }
