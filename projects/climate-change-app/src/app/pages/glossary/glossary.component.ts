@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { terms } from './terms.data'
+import { filter } from 'rxjs';
 @Component({
   selector: 'app-glossary',
   templateUrl: './glossary.component.html',
@@ -7,25 +8,11 @@ import { terms } from './terms.data'
 })
 export class GlossaryComponent {
 
-  constructor () {
-    function search(query: any) {
-      return function(item: any) {
-        for(var i in query) {
-          if(query[i] != item[i]) {
-            return false;
-          }
-        }
-        return true;
-      }
-    }
+
+  search(query: any) {
+    return terms.filter(c => c.term.includes(query) || c.definition.includes(query))
   }
   
-
-  search: any = []
-
-  
-
-//white screen of death & redirect... code below is the issue, remove to fix
- view: any = terms.filter(this.search(this.search))
-// view: any = this.terms
+  query: any = ''
+  view: any
 }

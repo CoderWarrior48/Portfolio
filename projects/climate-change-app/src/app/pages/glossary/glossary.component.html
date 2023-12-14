@@ -1,17 +1,17 @@
 <div class="page">
     <mat-form-field class="search">
         <mat-label>Clearable input</mat-label>
-        <input matInput type="search" [(ngModel)]="search">
+        <input matInput type="search" [(ngModel)]="query">
     </mat-form-field>
 
-    <h1>{{search}}</h1>
+    <h1>{{query}}</h1>
 
-    <mat-card *ngFor="let item of view">
+    <mat-card *ngFor="let item of search(query)">
         <mat-card-header>
             <mat-card-title>{{item.term}}</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-            {{item.defintion}}
+            {{item.definition}}
         </mat-card-content>
     </mat-card>
 </div>
