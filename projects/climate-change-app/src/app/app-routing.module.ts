@@ -5,6 +5,7 @@ import { GlossaryComponent } from './pages/glossary/glossary.component';
 import { CausesComponent } from './pages/causes/causes.component';
 import { FossilfuelsComponent } from './pages/causes/children/fossilfuels/fossilfuels.component';
 import { DeforestationComponent } from './pages/causes/children/deforestation/deforestation.component';
+import { EvidenceComponent } from './pages/evidence/evidence.component';
 
 const routes: Routes = [
   {path: '', pathMatch:"full", redirectTo: 'home'},
@@ -13,9 +14,11 @@ const routes: Routes = [
   {path:'causes', component: CausesComponent,
    children: [
     {path:'fossilfuels', component:FossilfuelsComponent},
-    {path:'deforestation', component:DeforestationComponent}
+    {path:'deforestation', component:DeforestationComponent},
+    ]
+  },
+  {path:'evidence', component:EvidenceComponent},
 
-    ]}
 
 ];
 
