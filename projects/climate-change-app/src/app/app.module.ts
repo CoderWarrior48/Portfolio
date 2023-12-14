@@ -12,6 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { GlossaryComponent } from './pages/glossary/glossary.component';
 import { CausesComponent } from './pages/causes/causes.component';
 import { VideoBannerComponent } from './components/video-banner/video-banner.component';
+import { FossilfuelsComponent } from './pages/causes/children/fossilfuels/fossilfuels.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { VideoBannerComponent } from './components/video-banner/video-banner.com
     GlossaryComponent,
     CausesComponent,
     VideoBannerComponent,
+    FossilfuelsComponent,
     
   ],
   imports: [
