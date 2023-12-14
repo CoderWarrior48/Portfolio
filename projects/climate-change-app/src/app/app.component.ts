@@ -19,6 +19,7 @@ export class AppComponent {
     for (let i = 0; i < terms.length; i++) {
       let entry = terms[i]
       let elements = document.getElementsByClassName('filter-keywords')
+      console.log(elements)
       for (let i = 0; i < elements.length; i++) {
         elements[i].innerHTML.replace(entry.term,`<b routerLink="${entry.link}">${entry.term}</b>`)
     }
