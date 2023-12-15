@@ -4,6 +4,11 @@
         <input matInput type="search" [(ngModel)]="query">
     </mat-form-field>
 
+    <mat-form-field>
+        <mat-label>Input</mat-label>
+        <input matInput>
+      </mat-form-field>
+
     <h1>{{query}}</h1>
 
     <mat-card *ngFor="let item of search(query)">
