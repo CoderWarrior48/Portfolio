@@ -15,15 +15,22 @@
 
 .text {
     opacity: 1;
-    top: 35%;
+    top: 25%;
     position: absolute;
     width: 100%;
     text-align: center;
-    line-height: 20px;
     color: white;
 
     h1 {
         font-size: 70px;
+        line-height: 150px;
+        color: rgba(225,225,225, .01);
+        background-image: url("../../../assets/videos/e.mp4");
+        background-repeat: repeat;
+        -webkit-background-clip:text;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-family: 'Raleway', sans-serif;
     }
     p {
         font-size: 15px;

@@ -1,0 +1,26 @@
+@use '@angular/material' as mat;
+@import "/src/styles.scss";
+
+.pages-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  
+}
+
+.card {
+    flex: 0 0 auto;
+    margin: 1%;
+    background-color: mat.get-color-from-palette($my-accent, 500);
+    width: 40%;
+    box-sizing: border-box;
+ 
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
