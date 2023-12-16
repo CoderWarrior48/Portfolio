@@ -1,14 +1,22 @@
-<div class="full-container">
-    <!-- <video autoplay muted id="landing-video" class="video">
-        <source src="assets/videos/e.mp4" type="video/mp4">
-    </video> -->
 
-    <div class="text">
-        <div class="container">
-            <video class="bg-video" #video (canplay)="video.play()" (loadedmetadata)="video.muted = true" loop>
-              <source src="assets/videos/e.mp4" type="video/mp4" />
-            </video>
-            <p class="text">{{text.title}}</p>
-          </div>
-    </div>
+<div class="big hide-lt-md">
+  <video class="climate" #climate1 (canplay)="climate1.play()" (loadedmetadata)="climate1.muted = true" loop>
+    <source src="assets/videos/climate.mp4" type="video/mp4" />
+  </video>
+  <video class="change" #change1 (canplay)="change1.play()" (loadedmetadata)="change1.muted = true" loop>
+    <source src="assets/videos/change.mp4" type="video/mp4" />
+  </video>
+
+  <h1 class="title">{{title}}</h1>
+</div>
+
+<div class="small hide-gt-sm">
+  <video class="climate" #climate (canplay)="climate.play()" (loadedmetadata)="climate.muted = true" loop>
+    <source src="assets/videos/climate.mp4" type="video/mp4" />
+  </video>
+  <video class="change" #change (canplay)="change.play()" (loadedmetadata)="change.muted = true" loop>
+    <source src="assets/videos/change.mp4" type="video/mp4" />
+  </video>
+
+  <h1 class="title">{{title}}</h1>
 </div>
