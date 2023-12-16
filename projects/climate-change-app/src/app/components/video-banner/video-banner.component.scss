@@ -1,38 +1,57 @@
 
-.container {
-    position: relative;
-}
+// .full-container {
+//     position: relative;
+// }
 
-.video {
-    width: 100%;
-    height: auto;
-    display: block;
-    top:0;
-    position: relative;
+// .video {
+//     width: 100%;
+//     height: auto;
+//     display: block;
+//     top:0;
+//     position: relative;
     
 
-}
+// }
 
-.text {
-    opacity: 1;
-    top: 25%;
-    position: absolute;
+// .text {
+//     opacity: 1;
+//     top: 25%;
+//     position: absolute;
+//     width: 100%;
+//     text-align: center;
+//     color: white;
+
+   
+//     p {
+//         font-size: 15px;
+//     }
+// }
+
+  
+  /* Container should be full height and full width */
+  .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .container > .bg-video {
     width: 100%;
-    text-align: center;
-    color: white;
-
-    h1 {
-        font-size: 70px;
-        line-height: 150px;
-        color: rgba(225,225,225, .01);
-        background-image: url("../../../assets/videos/e.mp4");
-        background-repeat: repeat;
-        -webkit-background-clip:text;
-        text-transform: uppercase;
-        font-weight: 100;
-        font-family: 'Raleway', sans-serif;
-    }
-    p {
-        font-size: 15px;
-    }
-}
+    height: 100%;
+  }
+  
+  /* background-color and color should be the same as the below otherwise it won't work */
+  .container > .text {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background-color: #000;
+    color: #fff;
+    font-weight: 900;
+    font-size: 100px;
+    font-family: sans-serif;
+    /* Mix Blend Mode does the all magic */
+    mix-blend-mode: multiply;
+    user-select: none;
+  }

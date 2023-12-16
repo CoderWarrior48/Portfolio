@@ -1,12 +1,14 @@
-<div class="container">
-    <video autoplay muted id="landing-video" class="video">
+<div class="full-container">
+    <!-- <video autoplay muted id="landing-video" class="video">
         <source src="assets/videos/e.mp4" type="video/mp4">
-    </video>
+    </video> -->
 
     <div class="text">
-        <div>
-            <h1>{{text.title}}</h1>
-            <p>{{text.subtitle}}</p>
-        </div>
+        <div class="container">
+            <video class="bg-video" #video (canplay)="video.play()" (loadedmetadata)="video.muted = true">
+              <source src="assets/videos/e.mp4" type="video/mp4" />
+            </video>
+            <p class="text">{{text.title}}</p>
+          </div>
     </div>
 </div>
