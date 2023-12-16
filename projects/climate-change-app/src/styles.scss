@@ -119,7 +119,7 @@ $my-primary: mat.define-palette($primary-palette, 500);
 $my-accent: mat.define-palette($accent-palette);
 $my-warn: mat.define-palette(mat.$red-palette);
 
-
+$accent-color: mat.get-color-from-palette($my-accent, 500);
 
 $dark-theme: mat.define-dark-theme((
  color: (
