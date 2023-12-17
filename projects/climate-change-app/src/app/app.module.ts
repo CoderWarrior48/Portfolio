@@ -15,6 +15,8 @@ import { VideoBannerComponent } from './components/video-banner/video-banner.com
 import { FossilfuelsComponent } from './pages/causes/children/fossilfuels/fossilfuels.component';
 import { DeforestationComponent } from './pages/causes/children/deforestation/deforestation.component';
 import { EvidenceComponent } from './pages/evidence/evidence.component';
+import { ImpactsComponent } from './pages/impacts/impacts.component';
+import { SolutionsComponent } from './pages/solutions/solutions.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { EvidenceComponent } from './pages/evidence/evidence.component';
     FossilfuelsComponent,
     DeforestationComponent,
     EvidenceComponent,
+    ImpactsComponent,
+    SolutionsComponent,
     
   ],
   imports: [

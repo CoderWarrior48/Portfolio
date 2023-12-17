@@ -1,45 +1,45 @@
 <app-video-banner title="Causes"></app-video-banner>
 
 <div class="container">
-    <mat-card routerLink="fossilfuels">
-        <mat-card-content>
-            <img src="assets/images/fossilfuels.jpg">
-        </mat-card-content>
+    <div class="card" routerLink="fossilfuels">
+        <img src="assets/images/fossilfuels.jpg">
         <div class="image-overlay">
-            <h1>Fossil fuels</h1>
-            <p>The burning of coal and oil</p>
+            <div class="text">
+                <h1>Fossil fuels</h1>
+                <p>The burning of coal and oil</p>
+            </div>
         </div>
-    </mat-card>
+    </div>
 
-    <mat-card routerLink="deforestation">
-        <mat-card-content>
-            <img src="assets/images/deforestation.jpg">
-        </mat-card-content>
+    <div class="card" routerLink="deforestation">
+        <img src="assets/images/deforestation.jpg">
         <div class="image-overlay">
-            <h1>Deforestation</h1>
-            <p>The widespread destruction of forests</p>
+            <div class="text">
+                <h1>Deforestation</h1>
+                <p>The widespread destruction of forests</p>
+            </div> 
         </div>
-    </mat-card>
+    </div>
 
-    <mat-card>
-        <mat-card-content>
-            <img src="assets/images/cattle.jpg">
-        </mat-card-content>
+    <div class="card">
+        <img src="assets/images/cattle.jpg">
         <div class="image-overlay">
-            <h1>Livestock Farming</h1>
-            <p>Methane and other products from the mass production of food</p>
+            <div class="text">
+                <h1>Livestock Farming</h1>
+                <p>Methane and other products from the mass production of food</p>
+            </div>
         </div>
-    </mat-card>
+    </div>
 
-    <mat-card>
-        <mat-card-content>
-            <img src="assets/images/farm.png">
-        </mat-card-content>
+    <div class="card">
+        <img src="assets/images/farm.png">
         <div class="image-overlay">
-            <h1>Fertilizers</h1>
-            <p>The emission of gases due to fertilizer</p>
+            <div class="text">
+                <h1>Fertilizers</h1>
+                <p>The emission of gases due to fertilizer</p>
+            </div>
         </div>
-    </mat-card>
+    </div>
 </div>
 <div class="description">
     <router-outlet></router-outlet>

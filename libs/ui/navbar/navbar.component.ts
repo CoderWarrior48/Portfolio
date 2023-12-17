@@ -29,8 +29,5 @@ export class NavbarComponent {
 
   @Input() data!: any;
 
-  constructor () {
-    console.log(this.data)
-  }
   
 }

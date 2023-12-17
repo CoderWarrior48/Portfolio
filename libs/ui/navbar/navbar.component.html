@@ -27,12 +27,12 @@
       </div>
   
       <button
-        mat-button
+        mat-icon-button
         routerLink="/"
-        class="branding box spacer hide-lt-md"
+        class=" hide-lt-md"
       >
         <!-- <mat-icon>home</mat-icon> -->
-        {{data.title}}
+          CL       
       </button>
       
       <button
@@ -43,13 +43,17 @@
       >
         <!-- <mat-icon>home</mat-icon> -->
         {{data.title}}
+       
       </button>
+
+      <span class="spacer hide-lt-md"></span>
+
       <button
         mat-button
         *ngFor="let item of data.links"
         routerLinkActive="selected"
         [routerLink]="item.path"
-        class="hide-lt-md"
+        class="hide-lt-md left"
       >
         {{ item.name }}
       </button>

@@ -1,0 +1,46 @@
+.heat {
+    background-color: rgba(255, 0, 0, 0.211);
+    mat-card {
+        margin: 15px;
+        width: 50%;
+        display:block;
+    }
+}
+
+.water {
+    background-color: rgba(0, 0, 255, 0.214);
+    mat-card {
+        margin: 15px;
+        width: 50%;
+        display:block;
+    }
+}
+
+.life {
+    background-color: rgba(115, 128, 0, 0.404);
+    mat-card {
+        margin: 15px;
+        width: 50%;
+        display:block;
+    }
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  img {
+    width:100%;
+  }
+
+  .text {
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.551);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

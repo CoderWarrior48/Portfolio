@@ -1,52 +1,78 @@
-.small {
-  width: 100%;
-  background-color: black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+// .small {
+//   width: 100%;
+//   background-color: black;
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
 
-  .climate {
-    width: 90%;
-  }
+//   .climate {
+//     width: 90%;
+//   }
 
-  .change {
-    width: 80%;
-  }
+//   .change {
+//     width: 80%;
+//   }
 
-  .title {
-    text-align: center;
-    width: 100%;
-    font-weight: 300px;
-    text-transform: uppercase;
-  }
+//   .title {
+//     text-align: center;
+//     width: 100%;
+//     font-weight: 300px;
+//     text-transform: uppercase;
+//   }
   
+// }
+
+// .big {
+//   width: 100%;
+//   padding-top: 5%;
+//   background-color: black;
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+
+//   .climate {
+//     width: 40%;
+//     margin-right: 2%;
+//     position: relative;
+//   }
+
+//   .change {
+//     width: 40%;
+//     margin-left: 2%;
+//     position: relative;
+//   }
+
+//   .title {
+//     text-align: center;
+//     width: 100%;
+//     font-weight: 300px;
+//     text-transform: uppercase;
+//   }
+// }
+
+.bg {
+  width: 100%;
+  position: relative;
 }
 
-.big {
+.cfa {
+  margin:15px;
+  position:absolute;
   width: 100%;
-  padding-top: 5%;
-  background-color: black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  top: 15%;
+  z-index:100;
 
   .climate {
-    width: 40%;
-    margin-right: 2%;
-    position: relative;
+    width:100%;
+    mix-blend-mode:exclusion;
+
   }
 
-  .change {
-    width: 40%;
-    margin-left: 2%;
-    position: relative;
-  }
-
-  .title {
-    text-align: center;
-    width: 100%;
-    font-weight: 300px;
+  h1 {
     text-transform: uppercase;
+    text-align: center;
+    margin: 0px;
+    font-weight: 100;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 }
-

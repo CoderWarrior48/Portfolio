@@ -6,6 +6,8 @@ import { CausesComponent } from './pages/causes/causes.component';
 import { FossilfuelsComponent } from './pages/causes/children/fossilfuels/fossilfuels.component';
 import { DeforestationComponent } from './pages/causes/children/deforestation/deforestation.component';
 import { EvidenceComponent } from './pages/evidence/evidence.component';
+import { ImpactsComponent } from './pages/impacts/impacts.component';
+import { SolutionsComponent } from './pages/solutions/solutions.component';
 
 const routes: Routes = [
   {path: '', pathMatch:"full", redirectTo: 'home'},
@@ -18,6 +20,8 @@ const routes: Routes = [
     ]
   },
   {path:'evidence', component:EvidenceComponent},
+  {path:'impacts', component:ImpactsComponent},
+  {path:'solutions', component:SolutionsComponent},
 
 
 ];

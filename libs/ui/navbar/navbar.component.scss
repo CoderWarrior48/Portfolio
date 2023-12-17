@@ -6,6 +6,7 @@ mat-sidenav-container {
     }
   
     #app-toolbar {
+      height: 60%;
       position: sticky;
       position: -webkit-sticky;
       top: 0;
@@ -17,6 +18,9 @@ mat-sidenav-container {
       overflow: hidden;
       text-overflow: ellipsis;
   
+
+      
+
       &.box {
         display: flex;
         align-items: center;
@@ -28,10 +32,13 @@ mat-sidenav-container {
         justify-content: center;
       }
   
-      &.spacer {
-        flex: 1 1 auto;
-        // margin: 0 50px 0 50px;
-      }
+      
     }
   }
     
+
+
+  .spacer {
+    flex: 1 1 auto;
+    // margin: 0 50px 0 50px;
+  }
