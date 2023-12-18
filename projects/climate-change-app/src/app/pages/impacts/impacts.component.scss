@@ -1,27 +1,32 @@
-.heat {
-    background-color: rgba(255, 0, 0, 0.211);
-    mat-card {
-        margin: 15px;
-        width: 50%;
-        display:block;
-    }
-}
+.section {
+    margin: 15px;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+    .cards {
+        margin-left: 20px;
+        width: 30%;
+        .card {
+            margin: 15px;
+        }
 
-.water {
-    background-color: rgba(0, 0, 255, 0.214);
-    mat-card {
-        margin: 15px;
-        width: 50%;
-        display:block;
     }
-}
+   
+    .image {
+        height: 100%;
+    }
 
-.life {
-    background-color: rgba(115, 128, 0, 0.404);
-    mat-card {
-        margin: 15px;
-        width: 50%;
-        display:block;
+    &.red {
+        background-color: rgba(255, 0, 0, 0.211);
+    }
+    &.blue {
+        background-color: rgba(4, 0, 255, 0.211);
+    }
+    &.green {
+        background-color: rgba(43, 255, 0, 0.211);
     }
 }
 
@@ -43,4 +48,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .header {
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    height: 100px;
   }
